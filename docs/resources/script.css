@@ -3,6 +3,7 @@
     padding:0
 }
 
+
 html {
     scroll-behavior: smooth;
     scroll-padding: 100vh; 
@@ -14,25 +15,13 @@ body {
 }
 
 #hello{
-    padding-left: 200px;
     text-align: left;
-    margin-left: 5px;
-}
-
-#quote {
-    margin: 20px;
-    font-size: 16px;
-    color: grey;
-    font-weight: lighter;
-    padding-top: 128px;
 }
 
 h1{
     font-family: 'Roboto Condensed', sans-serif;
     color:#C06014;
-
-    padding: 200px 200px 50px 200px;
-    font-size: 128px;
+    font-size: 10vh;
     text-align: left;
 }
 
@@ -46,19 +35,14 @@ h3 {
 }
 
 .sessao {
-    height: 100vh;
-    width: 80%;
     margin-left: 15%;
+    position: relative;
 }
 
 nav {
     position: fixed;
-    width: 20%;
     top:0;
     left: 0;
-    flex-direction: column;
-    display: flex;
-    height: 100vh;
 }
 
 body{
@@ -70,21 +54,15 @@ body{
 }
 
 #menu {
-    padding-top:50%;
     list-style: none;
-    font-size: 24px;
+    font-size: 3vh;
 }
 
 #menu li {
-    margin: 30px 20px 0 20px;
-    padding-bottom: 40px;
     font-style: italic;
-    
 }
 
-#menu li:first-child{
-    margin-top: 0px;
-}
+
 #menu li a{
     color:black;
     padding: 10px;
@@ -122,15 +100,15 @@ h2 {
     background-color:#eddbcd;
 }
 
+.container{
+    width: 95%;
+}
+
 .items li{
     padding-top: 3%;
 }
 
-.conteudo {
-    width: 80%;
-    margin:0 auto;
 
-}
 
 li{
     list-style-type: none;
@@ -138,8 +116,8 @@ li{
 
 #items-contato {
     margin-top: 20%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #items-contato li {
@@ -174,7 +152,6 @@ li{
 .texto li {
     margin: 24px;
     list-style: square;
-
 }
 
 #items-experiencia {
@@ -227,4 +204,106 @@ li{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+  }
+
+        
+
+  @media (max-width: 1000px) {
+
+    nav {
+        top:0;
+        left: 0;
+        right: 0;
+        height: 10vh;
+        flex-direction: row;
+        display: flex;
+        z-index: 10;
+
+    }
+
+    h1{
+        font-size: 13vh;
+    }
+
+    .sessao {
+        width: 100%;
+        padding-top: 10vh;
+    }
+
+    .sessao:first-child{
+        padding-top: 20vh;
+    }
+
+    .sessao:last-child{
+        padding-bottom: 20vh;
+    }
+
+    #menu {
+        width: 100vw;
+        position: fixed;
+        padding-top:5%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        background-color: #f5f5f5;
+        vertical-align: middle;
+        font-size: 2.5vh;
+    }
+    
+    #menu li {
+        margin: 16px 8px;
+        font-style: italic;
+    }
+
+    .conteudo {
+        width: 80%;
+        margin:0;
+        padding: 5%;
+    }
+
+  }
+
+  @media (min-width: 1001px) {
+    nav {
+        position: fixed;
+        width: 20%;
+        top:0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .sessao {
+        width: 80%;
+        height: 100vh;
+    }
+ 
+    #menu {
+        padding-top:50%;
+        list-style: none;
+    }
+    
+    #menu li {
+        margin: 16px 8px;
+        padding-bottom: 40px;
+        font-style: italic;
+        margin: 30px 20px 0 20px;
+        padding-bottom: 40px;
+    } 
+
+    #menu li:first-child{
+        margin-top: 0px;
+    }
+
+    .conteudo {
+        width: 80%;
+        margin:0;
+        position: relative;
+        top: 30%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
   }
