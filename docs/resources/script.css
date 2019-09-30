@@ -94,7 +94,7 @@ h2 {
 }
 
 .items{
-    padding: 10%;
+    padding: 5% 10%;
     margin-top: 10%;
     margin-right: 10%;
     background-color:#eddbcd;
@@ -277,6 +277,7 @@ li{
     .sessao {
         width: 80%;
         height: 100vh;
+        padding-top: 12vh;
     }
  
     #menu {
