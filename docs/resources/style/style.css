@@ -1,0 +1,38 @@
+.nav-link {
+  color: #2B293C;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #004197;
+}
+
+.nav-pills .nav-link.active:hover {
+  color:#DF265E;
+}
+
+.nav-pills .nav-link:hover {
+  color: #DF265E;
+}
+
+#typewriter{
+  color: #DF265E;
+}
+
+.bg-blue {
+  background-color: #004197;
+}
+
+.icon{
+  fill:black;
+}
+
+a {
+  color:#DF265E;
+  text-decoration: none;
+}
+a:hover{
+  color:#004197;
+}
